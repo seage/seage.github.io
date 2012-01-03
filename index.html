@@ -10,23 +10,29 @@
         <link href='./seage.css' media='screen, projection' rel='stylesheet' type='text/css' />
         <title>SEAGE</title>
 
-	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-	
-	<script>
-	$(document).ready(function() {
-	  $("#tabs").tabs();
-          //$("ul.css-tabs").tabs("div.css-panes > div", {effect: 'ajax'});
-	});
-        
-        var $tabs = $('#example').tabs(); // first tab selected
 
-        $('#arch-link').click(function() { // bind click event to link
-            $tabs.tabs('select', 2); // switch to third tab
-            return false;
-        });
-	</script>
+        <!--link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Flora (Default)"/-->
+        <!--link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery-ui.js"></script>
+        <script type="text/javascript" src="jquery-tabs.js"></script-->
+        
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7/jquery-ui.js"></script>
+
+
+
+        <script>
+                // The following function is called once the rest of the document is fully loaded
+                $(document).ready(function()
+                {
+                        $("#tabs").tabs(); // Make the tabs.
+                });
+
+        </script>
+	
     </head>
     <body>
         
@@ -36,170 +42,23 @@
             <h2><em>SE</em>ARCH <em>AGE</em>NTS for optimization</h2>
 
             <div id="str-stat">
-	    <div id="tabs">
-		  <ul class="css-tabs">
-		      <li><a href="#fragment-1"><span>Overview</span></a></li>
-		      <li><a href="#fragment-2"><span>Architecture</span></a></li>
-                      <li><a href="#fragment-2"><span>Roadmap</span></a></li>
-		      <li><a href="#fragment-3"><span>Get Involved!</span></a></li>
-                      <li><a href="todo.html" title="TodoOverview"> ToDo </a></li>
-		  </ul>
-		  <div id="fragment-1">
-		      <div id="stat-sl1">
-                    <h3>Description</h3>
-                    <div class="str-stat-odd"> SEAGE is an open-source project which provides various meta-heuristic algorithms with their implementations on various optimization problems. Each meta-heuristic can be handled through an unified interface of an object called Adapter. Agents have been designed to solve optimization problems through a collaboration of different meta-heuristics. 
-                        <br />
-                        A more detailed description can be found in <a href="http://seage.sourceforge.net/data/malek09col.pdf" onclick="window.open(this.href); return false;">this paper</a>. 
-                    </div>
-                    <h3>Feature Matrix</h3>
-                    <div class="str-stat-odd">
-                        <table id="tab-fm">
-                            <tbody>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th title="Travelling Salesman Problem">TSP</th>
-                                    <th title="Boolean Satisfiability Problem">SAT</th>
-                                    <th title="Jobshop Scheduling Problem">JSP</th>
-                                    <th title="Quadratic Assignment Problem">QAP</th>
-                                    <th title="Vehicle Routing Problem">VRP</th>
-                                    <th title="Graph Coloring Problem">GCP</th>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">GRASP</td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">Genetic Algorithm</td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td><img src="images/in_progress.png" title="In progress" alt="in progress" height="16" width="16" /></td>
-                                    <td><img src="images/in_progress.png" title="In progress" alt="in progress" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">Tabu Search</td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td><img src="images/in_progress.png" title="In progress" alt="in progress" height="16" width="16" /></td>
-                                    <td><img src="images/in_progress.png" title="In progress" alt="in progress" height="16" width="16" /></td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">Simulated Annealing</td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">Ant Colony</td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>    
-                                <tr>
-                                    <td class="sl1">Particle Swarm</td>
-                                    <td><img src="images/accept.png" title="done" alt="done" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td><img src="images/in_progress.png" title="In progress" alt="In progress" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">Firefly Algorithm</td>
-                                    <td><img src="images/in_progress.png" title="In progress" alt="In progress" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td><img src="images/in_progress.png" title="In progress" alt="In progress" height="16" width="16" /></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">Bees Algorithm</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">Artificial Immune System</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td class="sl1">Harmony Search</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div id="tabs">
+                    <ul >
+                            <li><a href="tabs/overview.html"><span>Overview</span></a></li>
+                            <li><a href="tabs/architecture.html"><span>Architecture</span></a></li>
+                            <li><a href="tabs/roadmap.html"><span>Roadmap</span></a></li>
+                            <li><a href="tabs/getinvolved.html"><span>Get Involved!</span></a></li>
+                    </ul>
 
-                    <h3>Source Code</h3>
-                    <div class="download">
-                        <a href="https://github.com/seage/seage">
-                            <img src="https://github.com/images/error/octocat_happy.gif" width="90" height="68" alt="github" />
-                        </a>
-                        <a href="http://github.com/seage/seage/zipball/master">
-                            <img src="http://github.com/images/modules/download/zip.png" width="90" height="88" alt="ZIP" />
-                        </a>
-                        <a href="http://github.com/seage/seage/tarball/master">
-                            <img src="http://github.com/images/modules/download/tar.png" width="90" height="88" alt="TAR" />
-                        </a>
-                    </div>
-                </div>
-
-                <div id="stat-sl2">
-                    <h3>Contact</h3>
-                    <div class="str-stat-odd"> Richard Malek [<a href="mailto:malekr1%40fel.cvut.cz">email</a>] 
-                        <br />Department of Cybernetics
-                        <br />Czech Technical University 
-                        <br />Prague, Czech Republic 
-                    </div>
-
-                    <h3>Architecture</h3>
-                    <div class="str-stat-odd"> 
-                        <img src="./images/schema.png" alt="Architecture" title="Architecture" height="400" width="395" /> 
-                    </div>
-                </div>
-
-                <div id="stat-reset">&nbsp;</div>
+                    <!--div id="example">
+                            <p>
+                            Some text in this file.
+                            </p>
+                    </div-->
+                </div>  
             </div>
-		  
-		  <div id="fragment-2">
-		      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-		      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-		  </div>
-		  <div id="fragment-3">
-		      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-		      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-		      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-		  </div>
-            </div>                
         </div>
+ 
 
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -212,5 +71,13 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
+        <script>
+
+	$(function() {
+
+	$("ul.css-tabs").tabs("div.css-panes > div", {effect: 'ajax', history: true});
+	});
+
+	</script>
     </body>
 </html>
