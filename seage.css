@@ -9,6 +9,10 @@ body {
 }
 
 
+div{
+	border:0px solid blue;
+}
+
 
 /* --------------------------------------------------------------------------------------------------------- */
 
@@ -85,9 +89,6 @@ hr {
 }
 
 
-
-
-
 /* --------------------------------------------------------------------------------------------------------- */
 
 
@@ -95,7 +96,7 @@ hr {
 
 
 #str {
-	width: 1000px;
+	width: 1100px;
 	margin: auto;
 	margin-top: 0px;
 	text-align: left;
@@ -104,18 +105,18 @@ hr {
 
 
 	#str-stat {
-		width: 840px;
-		margin-left: 110px;
+		width: 950px;
+		margin-left: 50px;
 		text-align: justify;
 	}
 	
 		#stat-sl1 {
-			width: 390px;
+			width: 420px;
 			float: left;
 		}
 		
 		#stat-sl2 {
-			width: 390px;
+			width: 420px;
 			float: right;
 		}
 		
