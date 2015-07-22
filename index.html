@@ -7,8 +7,8 @@
         <meta name='description' content='SEAGE: SEarch AGEnts for optimization' />
         <meta name='keywords' content='combinatorial optimalization, meta-heuristic, metaheuristic, hyper-heuristic, hyperheuristic, genetic algorithm, tabu search, ant colony, particle swarm' />
         <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
-        <link href='./seage.css' media='screen, projection' rel='stylesheet' type='text/css' />
-        <title>SEAGE - A Hyperheuristic Framework </title>
+        <link href='./style.css' media='screen, projection' rel='stylesheet' type='text/css' />
+        <title id="title">SEAGE - A Hyperheuristic Framework </title>
 
 
         <!--link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Flora (Default)"/-->
@@ -40,6 +40,11 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
+            
+            function loadTab(tabID)
+            {
+	      $("#"+tabID).html('<object data="'+tabID+'.html" width="920" height="750"/>');
+            }
         </script>
 	
     </head>
@@ -53,18 +58,28 @@
             <div id="str-stat">
                 <div id="tabs">
                     <ul >
-                            <li><a href="tabs/overview.html"><span>Overview</span></a></li>
-                            <li><a href="tabs/architecture.html"><span>Architecture</span></a></li>
-                            <li><a href="tabs/roadmap.html"><span>Roadmap</span></a></li>
-			    <li><a href="tabs/publications.html"><span>Publications</span></a></li>
-                            <li><a href="tabs/getinvolved.html"><span><b>Get Involved!</b></span></a></li>
+                            <li><a href="#overview"><span>Overview</span></a></li>
+                            <li><a href="#architecture"><span>Architecture</span></a></li>
+                            <li><a href="#roadmap"><span>Roadmap</span></a></li>
+			    <li><a href="#publications"><span>Publications</span></a></li>
+                            <li><a href="#getinvolved"><span><b>Get Involved!</b></span></a></li>
                     </ul>
 
-                    <!--div id="example">
-                            <p>
-                            Some text in this file.
-                            </p>
-                    </div-->
+                    <div id="overview">
+			    <script>loadTab("overview")</script>
+                    </div>
+                    <div id="architecture">
+			    <script>loadTab("architecture")</script>
+                    </div>
+                    <div id="roadmap">
+			    <script>loadTab("roadmap")</script>
+                    </div>
+                    <div id="publications">
+			    <script>loadTab("publications")</script>
+                    </div>
+                    <div id="getinvolved">
+			    <script>loadTab("getinvolved")</script>
+                    </div>                   
                 </div>  
             </div>
         </div>
