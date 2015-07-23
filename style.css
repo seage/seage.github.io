@@ -188,10 +188,12 @@ hr {
 				margin-bottom: 110px;
 			}
 		
-		
+		#tab-fm {
+		  height: 360px;
+		}
 		#tab-fm {
 			width: 420px;
-			height: 360px;
+			
 			border: 1px solid #cdcdcd;
 		}
 		
@@ -231,23 +233,26 @@ hr {
 
 /* --------------------------------------------------------------------------------------------------------- */
 
-#img-yes, #img-no, #img-warn, #img-pending {
+/*#img-yes, #img-no, #img-warn, #img-pending {
   width: 16px;
   height: 16px;
-}
+}*/
 
-#img-yes{
-  content: url(images/yes.png) no-repeat;
+.img-tbl{
+  
+    width: 16px; /* Width of new image */
+  height: 16px; /* Height of new image */
+    
 }
 
 #img-no{
-  content: url(images/no.png) no-repeat;
+  background:url('images/no.png');
 }
 
 #img-warn{
-  content: url(images/warn.png) no-repeat;
+  background:url('images/warn.png');
 }
 
 #img-pending{
-  content: url(images/pending.png) no-repeat;
+  background:url('images/pending.png');
 }
