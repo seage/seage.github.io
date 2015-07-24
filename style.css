@@ -1,6 +1,6 @@
 body {
 	margin: 0px;
-	padding: 20px;
+	padding-bottom: 20px;
 	background-color: #fff;
 	font-family: "Verdana CE", Verdana, "Arial CE", Arial, Helvetica, sans-serif;
 	font-size: 0.8em;
@@ -40,12 +40,12 @@ h1 {
 	background-image: URL('./images/logo.png');
 	background-position: left top;
 	background-repeat: no-repeat;
-	margin-left: 90px;
+	margin-left: 150px;
 }
 
 	h1 a {
 		display: block;
-		height: 160px;
+		height: 150px;
 		text-decoration: none;
 	}
 	
@@ -62,7 +62,7 @@ h2 {
 	font-size: 1.9em;
 	font-weight: normal;
 	position: absolute;
-	left: 310px;
+	left: 430px;
 	top: 40px;
 }
 
@@ -189,7 +189,7 @@ hr {
 			}
 		
 		#tab-fm {
-		  height: 360px;
+		  height: 320px;
 		}
 		#tab-fm {
 			width: 420px;
