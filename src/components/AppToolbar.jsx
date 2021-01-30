@@ -2,6 +2,12 @@ import { AppBar, Link, makeStyles, Toolbar, Typography } from "@material-ui/core
 import AdjustIcon from '@material-ui/icons/Adjust';
 
 const useStyles = makeStyles((theme) => ({
+  appBar: {
+    borderBottom: `1px solid ${theme.palette.divider}`,
+  },
+  toolbar: {
+    flexWrap: 'wrap',
+  },
   icon: {
     marginRight: theme.spacing(2),
   },
@@ -14,8 +20,16 @@ const useStyles = makeStyles((theme) => ({
   toolbarTitle: {
     flexGrow: 1,
   },
+  nomenu: {
+    marginRight: theme.spacing(20),
+  },
+  nav: {
+    flexGrow: 1,
+    // align: 'center',
+    // marginLeft: theme.spacing(-20)
+  },
   link: {
-    paddingRight: theme.spacing(7),
+    margin: theme.spacing(1, 2.5),
   },
   linkTarget: {
     paddingTop: '85px',
@@ -30,21 +44,19 @@ const useStyles = makeStyles((theme) => ({
 const AppToolbar = () => {
   const classes = useStyles();
   return (
-    <AppBar position="fixed">
-      <Toolbar>
-        <AdjustIcon className={classes.icon} color="secondary" />
+    <AppBar position="fixed" elevation={0} className={classes.appBar}>
+      <Toolbar className={classes.toolbar}>
+        <AdjustIcon className={classes.icon} color="secondary" noWrap />
         <Typography variant="h5" color="inherit" noWrap>
-          {/* <a noWrap href="#" >SEarch AGEnts</a> */}
           <Link href="#" color="inherit" underline="none">
             <span className={classes.logoText}>SE</span><span className={classes.logoText2}>ARCH</span>
             <span className={classes.logoText}>AGE</span><span className={classes.logoText2}>NTS</span>
           </Link>
         </Typography>
-
-        <nav className={classes.menu}>
+        <nav className={classes.nav} align="center">
           <Link variant="button" color="inherit" href="#basics" className={classes.link}>
             Basics
-            </Link>
+          </Link>
           <Link variant="button" color="inherit" href="#architecture" className={classes.link}>
             Architecture
             </Link>
@@ -58,6 +70,7 @@ const AppToolbar = () => {
             Contacts
             </Link>
         </nav>
+        <div className={classes.nomenu}></div>
       </Toolbar>
     </AppBar>
   );

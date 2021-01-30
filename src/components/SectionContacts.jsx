@@ -30,13 +30,13 @@ const SectionContacts = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
               <div>
-              <Typography variant="h6" align="right" color="textSecondary" paragraph>
+              <Typography variant="h6" align="center" color="textSecondary" paragraph>
                 <Link href="https://www.linkedin.com/in/malekric" target="_blank">LinkedIn</Link>
               </Typography>    
-              <Typography variant="h6" align="right" color="textSecondary" paragraph>
+              <Typography variant="h6" align="center" color="textSecondary" paragraph>
                 <Link href="https://github.com/rickq" target="_blank">GitHub</Link>
               </Typography>
-              <Typography variant="h6" align="right" color="textSecondary" paragraph>
+              <Typography variant="h6" align="center" color="textSecondary" paragraph>
                 <Link href="https://www.researchgate.net/profile/Richard_Malek" target="_blank">ResearchGate</Link>
               </Typography>
               </div>
