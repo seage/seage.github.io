@@ -33,12 +33,12 @@ const Intro = () => {
           <Grid item>
             <Button variant="contained" color="primary" href="https://github.com/seage/seage" target="_blank">
               <GitHubIcon className={classes.icon} /> Go to GitHub
-                  </Button>
+            </Button>
           </Grid>
           <Grid item>
             <Button variant="outlined" color="primary" href="#basics">
               Learn more
-                  </Button>
+            </Button>
           </Grid>
         </Grid>
       </div>
