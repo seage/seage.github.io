@@ -104,7 +104,7 @@ const renderResult = (result) => {
   };
 };
 
-export default function CustomizedTables() {
+export default function FeatureMatrixTable() {
   const classes = useStyles();
 
   return (
@@ -114,18 +114,22 @@ export default function CustomizedTables() {
           <TableRow key="head">
             <StyledTableCell1 width="200"></StyledTableCell1>
             {algorithms.map(row => (
-              <StyledTableCell align="center" key={row.name}>{row.name}</StyledTableCell>
+              <StyledTableCell align="center" key={row.name}>
+                {row.name}
+              </StyledTableCell>
             ))}
           </TableRow>
         </TableHead>
         <TableBody>
           {problems.map((problem) => (
             <StyledTableRow key={problem.id}>              
-              <StyledTableCell2>
+              <StyledTableCell2 key="problem">
                 {problem.name}
               </StyledTableCell2>
               {algorithms.map(algorithm => (
-                <StyledTableCell align="center">{renderResult(cells[algorithm.id][problem.id])}</StyledTableCell>
+                <StyledTableCell key={algorithm.id} align="center">
+                  {renderResult(cells[algorithm.id][problem.id])}
+                </StyledTableCell>
               ))}              
             </StyledTableRow>
           ))}
