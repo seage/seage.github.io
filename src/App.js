@@ -1,4 +1,4 @@
-import Album from './Album';
+import FrontPage from './FrontPage';
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
@@ -16,7 +16,7 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Album />
+      <FrontPage />
     </ThemeProvider>
   );
 }

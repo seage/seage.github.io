@@ -11,6 +11,8 @@ import Paper from '@material-ui/core/Paper';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import PauseCircleOutlineIcon from '@material-ui/icons/PauseCircleOutline';
 import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
+import RemoveIcon from '@material-ui/icons/Remove';
+import { Tooltip } from '@material-ui/core';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -62,8 +64,8 @@ const problems = [
   createData('SAT', 'Satisfiability'),
   createData('JSP', 'Jobshop Sheduling'),
   createData('QAP', 'Quadratic Assignment'),
-  createData('VRP', 'Vehicle Routing'),
-  createData('GCP', 'Graph Colouring')
+  // createData('VRP', 'Vehicle Routing'),
+  // createData('GCP', 'Graph Colouring')
 ];
 
 const cells = {
@@ -76,23 +78,30 @@ const cells = {
   'FA': {'TSP':'~', 'SAT':'', 'JSP':'', 'QAP':'~', 'VRP':'', 'GCP':''},
 }
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   table: {
     minWidth: 700,
   },
-});
+}));
+
+const LightTooltip = withStyles((theme) => ({
+  tooltip: {
+    backgroundColor: theme.palette.primary.main,
+    fontSize: 13,
+  },
+}))(Tooltip);
 
 const renderResult = (result) => {
   switch(result) {
     case 'OK':      
-      return <CheckCircleIcon color="secondary"/>;
+      return (<LightTooltip title="Done" color="primary"><CheckCircleIcon color="secondary" tooltip="asdf"/></LightTooltip>);
     case '~':
-      return <PauseCircleOutlineIcon color="primary"/>;
+      return (<LightTooltip title="Partially Done"><PauseCircleOutlineIcon color="primary"/></LightTooltip>);
     case 'x':
-      return <ErrorOutlineIcon color="primary" />;
+      return (<LightTooltip title="Error"><ErrorOutlineIcon color="primary" /></LightTooltip>);
     default:
+      return (<LightTooltip title="Not Implemented"><RemoveIcon color="primary"/></LightTooltip>);
   };
-  return <span />;
 };
 
 export default function CustomizedTables() {
@@ -125,28 +134,3 @@ export default function CustomizedTables() {
      </TableContainer>
   );
 }
-
-    /*<TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="customized table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell1></StyledTableCell1>
-            {rows.map(column => (
-              <StyledTableCell align="right">{column}</StyledTableCell>
-            ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.name}>              
-              <StyledTableCell2>
-                {row.name}
-              </StyledTableCell2>
-              {columns.map(column => (
-                <StyledTableCell align="right">{cells[row.id][column]}</StyledTableCell>
-              ))}              
-            </StyledTableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>  */
