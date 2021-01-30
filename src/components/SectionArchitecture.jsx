@@ -1,8 +1,13 @@
 import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
-import logo from '../images/architecture.png';
+import architecture from '../images/architecture.svg';
 
 const useStyles = makeStyles((theme) => ({
   arch: {
+    // paddingTop: theme.spacing(1)
+  },
+  image: {
+    // backgroundColor: 'red',
+    maxWidth: '100%',
     paddingTop: theme.spacing(1)
   }
 }));
@@ -14,7 +19,7 @@ const SectionArchitecture = () => {
       <Container maxWidth="md">
         <Typography component="h2" variant="h3" align="center" color="primary" gutterBottom>
           Architecture
-          </Typography>
+        </Typography>
         <Grid container spacing={10} className={classes.arch}>
           <Grid item xs={12} sm={6} md={6}>
             <Typography variant="h5" align="justify" color="textSecondary" paragraph>
@@ -33,7 +38,10 @@ const SectionArchitecture = () => {
               </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={6}>
-            <img src={logo} alt="logo" align="right" />
+              <div className={classes.image}>
+                <img src={architecture} alt="architecture" align="right" className={classes.image}/>
+              </div>
+              
           </Grid>
         </Grid>
       </Container>

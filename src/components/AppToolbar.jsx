@@ -1,5 +1,5 @@
 import { AppBar, Link, makeStyles, Toolbar, Typography } from "@material-ui/core";
-import AdjustIcon from '@material-ui/icons/Adjust';
+import SeageLogo from '../images/seage-logo.svg';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -39,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     textAlign: 'center'
   },
+  image: {
+    width: theme.spacing(11),
+    paddingRight: theme.spacing(2)
+  }
 }));
 
 const AppToolbar = () => {
@@ -46,11 +50,14 @@ const AppToolbar = () => {
   return (
     <AppBar position="fixed" elevation={0} className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
-        <AdjustIcon className={classes.icon} color="secondary" noWrap />
+        <Link href="#" color="inherit" underline="none">   
+          <img src={SeageLogo} alt="logo"  className={classes.image}/>
+        </Link>
         <Typography variant="h5" color="inherit" noWrap>
           <Link href="#" color="inherit" underline="none">
-            <span className={classes.logoText}>SE</span><span className={classes.logoText2}>ARCH</span>
-            <span className={classes.logoText}>AGE</span><span className={classes.logoText2}>NTS</span>
+          <span className={classes.logoText}>SEAGE</span>
+            {/* <span className={classes.logoText}>SE</span><span className={classes.logoText2}>ARCH</span> */}
+            {/* <span className={classes.logoText}>AGE</span><span className={classes.logoText2}>NTS</span> */}
           </Link>
         </Typography>
         <nav className={classes.nav} align="center">

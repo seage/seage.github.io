@@ -1,5 +1,6 @@
 import { Button, Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import GitHubIcon from '@material-ui/icons/GitHub';
+import SeageLogo from '../images/seage-logo.svg';
 
 const useStyles = makeStyles((theme) => ({
   heroButtons: {
@@ -14,14 +15,15 @@ const Intro = () => {
   const classes = useStyles();
   return (
     <Container maxWidth="sm">
-      <Grid container spacing={2} justify="center" alignItems="center">
+      <Grid container spacing={6} justify="center" alignItems="center">
         <Grid item>
-          <img src="https://raw.githubusercontent.com/seage/web/gh-pages/images/logo.png" alt="logo" />
+          {/* <img src="https://raw.githubusercontent.com/seage/web/gh-pages/images/logo.png" alt="logo" /> */}
+          <img src={SeageLogo} alt="logo" width="180"/>
         </Grid>
         <Grid item>
           <Typography component="h1" variant="h2" align="center" color="primary" gutterBottom>
             SEAGE
-                </Typography>
+          </Typography>
         </Grid>
       </Grid>
 
