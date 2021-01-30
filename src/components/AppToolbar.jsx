@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   logoText: {
-    color: theme.palette.secondary.main
+    color: 'white' //theme.palette.secondary.main
   },
   logoText2: {
     fontSize: '55%',
