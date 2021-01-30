@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.fd226198.chunk.js",
-    "main.js.map": "/static/js/main.fd226198.chunk.js.map",
+    "main.js": "/static/js/main.dba79ab8.chunk.js",
+    "main.js.map": "/static/js/main.dba79ab8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9f209bb9.js",
     "runtime-main.js.map": "/static/js/runtime-main.9f209bb9.js.map",
-    "static/js/2.b885fc4a.chunk.js": "/static/js/2.b885fc4a.chunk.js",
-    "static/js/2.b885fc4a.chunk.js.map": "/static/js/2.b885fc4a.chunk.js.map",
+    "static/js/2.5e9b3275.chunk.js": "/static/js/2.5e9b3275.chunk.js",
+    "static/js/2.5e9b3275.chunk.js.map": "/static/js/2.5e9b3275.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.b885fc4a.chunk.js.LICENSE.txt": "/static/js/2.b885fc4a.chunk.js.LICENSE.txt",
-    "static/media/architecture.349fdee4.png": "/static/media/architecture.349fdee4.png",
-    "static/media/researchgate.72d19f9c.svg": "/static/media/researchgate.72d19f9c.svg"
+    "static/js/2.5e9b3275.chunk.js.LICENSE.txt": "/static/js/2.5e9b3275.chunk.js.LICENSE.txt",
+    "static/media/architecture.d5b1144d.svg": "/static/media/architecture.d5b1144d.svg",
+    "static/media/researchgate.72d19f9c.svg": "/static/media/researchgate.72d19f9c.svg",
+    "static/media/seage-logo.25fe0527.svg": "/static/media/seage-logo.25fe0527.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9f209bb9.js",
-    "static/js/2.b885fc4a.chunk.js",
+    "static/js/2.5e9b3275.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.fd226198.chunk.js"
+    "static/js/main.dba79ab8.chunk.js"
   ]
 }
