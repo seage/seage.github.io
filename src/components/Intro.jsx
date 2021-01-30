@@ -29,7 +29,7 @@ const Intro = () => {
 
       <Typography variant="h5" align="center" color="textSecondary" paragraph>
         SEAGE is a hyper-heuristic framework for collaboration of metaheuristic algorithms.
-            </Typography>
+      </Typography>
       <div className={classes.heroButtons}>
         <Grid container spacing={2} justify="center">
           <Grid item>

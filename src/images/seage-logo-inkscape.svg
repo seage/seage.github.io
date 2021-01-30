@@ -33,9 +33,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="406.82906"
-     inkscape:cy="195.30274"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="269.64554"
+     inkscape:cy="126.63897"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -251,14 +251,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.7367692px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:oldstyle-nums tabular-nums diagonal-fractions;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.076027"
-       x="8.6740284"
-       y="154.16475"
+       x="6.7801261"
+       y="156.4446"
        id="text955"
-       transform="matrix(1.3529022,-0.21542606,0.40158557,0.67520626,0,0)"><tspan
+       transform="matrix(1.34726,-0.24828022,0.41789537,0.66523525,0,0)"><tspan
          sodipodi:role="line"
          id="tspan953"
-         x="8.6740284"
-         y="154.16475"
+         x="6.7801261"
+         y="156.4446"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.7367692px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:oldstyle-nums tabular-nums diagonal-fractions;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke-width:0.076027">SEAGE</tspan></text>
   </g>
 </svg>
